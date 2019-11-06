@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:java="http://www.mulesoft.org/schema/mule/java" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/java http://www.mulesoft.org/schema/mule/java/current/mule-java.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="45aa10b7-9000-48b9-a4b3-0eb599a021c3" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="test_log_4jFlow1" doc:id="42b77c4a-d2df-4268-95a8-3240ef0ab7d1" >
+		<http:listener doc:name="Listener" doc:id="f968b226-8eb9-433b-8a0d-4957fe6b0322" config-ref="HTTP_Listener_config" path="/hello"/>
+		<ee:transform doc:name="Transform Message" doc:id="71c1ce2d-60de-41b5-b7d5-94f41e5f35b0" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+    
+    "field1": "name", 
+    "field2": "test",
+    "sftp_location":"sftp://blahblah",
+    "s3_location":"s3//blah/blah",
+    "encrypted_fields": [
+        {
+            "ssn":
+             {
+                "encrypted_value": "AQICAHhQgnMAiP8TEQ3/r+nxwePP2VOcLmMGvmFXX8om3hCCugHnZkj/soNkU+TBG+9TbtcZAAAAaTBnBgkqhkiG9w0BBwagWjBYAgEAMFMGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMP0YiHQRAfplunC3zAgEQgCYL2fq/L0LXVhSPqsYsBilGInNBFw2rsevCclwRn1lXpc9BhEoSmg==",
+                "encryption_type": "AES-GCM",
+                "authentication_type": "KMS with IAM Role",
+                "encryption_context": "{\"environment\":\"wu-llm-stg\",\"field_name\":\"social_security_number\"}",
+                "decryption_key": "arn:aws:kms:us-west-2:708629414622:key/5d83e7e6-bb98-4126-9ddb-56bf0c0dafaa",
+                "decryption_credentials_path": "arn:aws:iam::708629414622:role/DataSystems-Team-Sandbox"
+            },
+            "recommender":
+             {
+                "encrypted_value": "AQICAHhQgnMAiP8TEQ3/r+nxwePP2VOcLmMGvmFXX8om3hCCugEtW7E2EwrZo0EiUWHaeAEhAAAAbDBqBgkqhkiG9w0BBwagXTBbAgEAMFYGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMhMP54UO25EBh+6yCAgEQgClOeEexsap2lQmNqg26MCrkrmR5WASAdSsUhiRNNR6SIImjluPaHfNMEg==",
+                "encryption_type": "AES-GCM",
+                "authentication_type": "KMS with IAM Role",
+                "encryption_context": "{\"environment\":\"wu-llm-stg\",\"field_name\":\"social_security_number\"}",
+                "decryption_key": "arn:aws:kms:us-west-2:708629414622:key/5d83e7e6-bb98-4126-9ddb-56bf0c0dafaa",
+                "decryption_credentials_path": "arn:aws:iam::708629414622:role/DataSystems-Team-Sandbox"
+            }          
+}
+    ]
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<ee:transform doc:name="Transform Message" doc:id="7696cd82-e277-437b-9d61-7d655f261713" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+import decrypt from dw::decryptPayload
+---
+decrypt(payload.encrypted_fields, "encrypted_fields", payload)]]></ee:set-payload>
+			</ee:message>
+			<ee:variables >
+			</ee:variables>
+		</ee:transform>
+		<ee:transform doc:name="Transform Message" doc:id="d4e19f5b-f708-4bc2-9320-0fa6cf1f476c">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+import removePair from dw::removeKeyPair
+var s3_location_remove = removePair("s3_location", payload)
+---
+s3_location_remove
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="9a978c55-c48b-44a0-8890-79123b73888e" message="#[vars.decryptedFields]"/>
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="d647d975-5eb6-43e4-a9b8-f10d1c6a8bad" />
+	</flow>
+</mule>

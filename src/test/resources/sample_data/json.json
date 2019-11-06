@@ -1,0 +1,14 @@
+{
+  "field1": "????",
+  "field2": "????",
+  "encrypted_fields": [
+    {
+      "ssn": {
+        
+      },
+      "recommender": {
+        
+      }
+    }
+  ]
+}

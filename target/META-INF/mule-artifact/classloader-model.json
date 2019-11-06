@@ -1,0 +1,1916 @@
+{
+  "version": "1.1.0",
+  "artifactCoordinates": {
+    "groupId": "com.mycompany",
+    "artifactId": "test_log_4j",
+    "version": "1.0.0-SNAPSHOT",
+    "type": "jar",
+    "classifier": "mule-application"
+  },
+  "dependencies": [
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.connectors",
+        "artifactId": "mule-http-connector",
+        "version": "1.5.6",
+        "type": "jar",
+        "classifier": "mule-plugin"
+      },
+      "uri": "repository/org/mule/connectors/mule-http-connector/1.5.6/mule-http-connector-1.5.6-mule-plugin.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.connectors",
+        "artifactId": "mule-sockets-connector",
+        "version": "1.1.5",
+        "type": "jar",
+        "classifier": "mule-plugin"
+      },
+      "uri": "repository/org/mule/connectors/mule-sockets-connector/1.1.5/mule-sockets-connector-1.1.5-mule-plugin.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.connectors",
+        "artifactId": "mule-file-connector",
+        "version": "1.3.1",
+        "type": "jar",
+        "classifier": "mule-plugin"
+      },
+      "uri": "repository/org/mule/connectors/mule-file-connector/1.3.1/mule-file-connector-1.3.1-mule-plugin.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.modules",
+        "artifactId": "mule-module-file-extension-common",
+        "version": "1.2.1",
+        "type": "jar",
+        "classifier": "mule-plugin"
+      },
+      "uri": "repository/org/mule/modules/mule-module-file-extension-common/1.2.1/mule-module-file-extension-common-1.2.1-mule-plugin.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "commons-pool",
+        "artifactId": "commons-pool",
+        "version": "1.6",
+        "type": "jar"
+      },
+      "uri": "repository/commons-pool/commons-pool/1.6/commons-pool-1.6.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.module",
+        "artifactId": "mule-java-module",
+        "version": "1.2.5",
+        "type": "jar",
+        "classifier": "mule-plugin"
+      },
+      "uri": "repository/org/mule/module/mule-java-module/1.2.5/mule-java-module-1.2.5-mule-plugin.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "commons-codec",
+        "artifactId": "commons-codec",
+        "version": "1.11",
+        "type": "jar"
+      },
+      "uri": "repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.bouncycastle",
+        "artifactId": "bcprov-ext-jdk15on",
+        "version": "1.58",
+        "type": "jar"
+      },
+      "uri": "repository/org/bouncycastle/bcprov-ext-jdk15on/1.58/bcprov-ext-jdk15on-1.58.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-encryption-sdk-java",
+        "version": "1.6.0",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-encryption-sdk-java/1.6.0/aws-encryption-sdk-java-1.6.0.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk/1.11.627/aws-java-sdk-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-forecastquery",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-forecastquery/1.11.627/aws-java-sdk-forecastquery-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "jmespath-java",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/jmespath-java/1.11.627/jmespath-java-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-forecast",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-forecast/1.11.627/aws-java-sdk-forecast-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-lakeformation",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-lakeformation/1.11.627/aws-java-sdk-lakeformation-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-eventbridge",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-eventbridge/1.11.627/aws-java-sdk-eventbridge-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-ec2instanceconnect",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-ec2instanceconnect/1.11.627/aws-java-sdk-ec2instanceconnect-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-applicationinsights",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-applicationinsights/1.11.627/aws-java-sdk-applicationinsights-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-servicequotas",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-servicequotas/1.11.627/aws-java-sdk-servicequotas-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-personalizeevents",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-personalizeevents/1.11.627/aws-java-sdk-personalizeevents-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-personalize",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-personalize/1.11.627/aws-java-sdk-personalize-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-personalizeruntime",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-personalizeruntime/1.11.627/aws-java-sdk-personalizeruntime-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-ioteventsdata",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-ioteventsdata/1.11.627/aws-java-sdk-ioteventsdata-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-iotevents",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-iotevents/1.11.627/aws-java-sdk-iotevents-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-iotthingsgraph",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-iotthingsgraph/1.11.627/aws-java-sdk-iotthingsgraph-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-groundstation",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-groundstation/1.11.627/aws-java-sdk-groundstation-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-mediapackagevod",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-mediapackagevod/1.11.627/aws-java-sdk-mediapackagevod-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-managedblockchain",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-managedblockchain/1.11.627/aws-java-sdk-managedblockchain-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-textract",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-textract/1.11.627/aws-java-sdk-textract-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-worklink",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-worklink/1.11.627/aws-java-sdk-worklink-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-backup",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-backup/1.11.627/aws-java-sdk-backup-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-docdb",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-docdb/1.11.627/aws-java-sdk-docdb-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-apigatewayv2",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-apigatewayv2/1.11.627/aws-java-sdk-apigatewayv2-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-apigatewaymanagementapi",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-apigatewaymanagementapi/1.11.627/aws-java-sdk-apigatewaymanagementapi-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-kafka",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-kafka/1.11.627/aws-java-sdk-kafka-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-appmesh",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-appmesh/1.11.627/aws-java-sdk-appmesh-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-licensemanager",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-licensemanager/1.11.627/aws-java-sdk-licensemanager-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-securityhub",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-securityhub/1.11.627/aws-java-sdk-securityhub-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-fsx",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-fsx/1.11.627/aws-java-sdk-fsx-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-mediaconnect",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-mediaconnect/1.11.627/aws-java-sdk-mediaconnect-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-kinesisanalyticsv2",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-kinesisanalyticsv2/1.11.627/aws-java-sdk-kinesisanalyticsv2-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-comprehendmedical",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-comprehendmedical/1.11.627/aws-java-sdk-comprehendmedical-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-globalaccelerator",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-globalaccelerator/1.11.627/aws-java-sdk-globalaccelerator-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-transfer",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-transfer/1.11.627/aws-java-sdk-transfer-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-datasync",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-datasync/1.11.627/aws-java-sdk-datasync-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-robomaker",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-robomaker/1.11.627/aws-java-sdk-robomaker-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-amplify",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-amplify/1.11.627/aws-java-sdk-amplify-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-quicksight",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-quicksight/1.11.627/aws-java-sdk-quicksight-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-rdsdata",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-rdsdata/1.11.627/aws-java-sdk-rdsdata-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-route53resolver",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-route53resolver/1.11.627/aws-java-sdk-route53resolver-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-ram",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-ram/1.11.627/aws-java-sdk-ram-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-s3control",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-s3control/1.11.627/aws-java-sdk-s3control-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-pinpointsmsvoice",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-pinpointsmsvoice/1.11.627/aws-java-sdk-pinpointsmsvoice-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-pinpointemail",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-pinpointemail/1.11.627/aws-java-sdk-pinpointemail-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-chime",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-chime/1.11.627/aws-java-sdk-chime-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-signer",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-signer/1.11.627/aws-java-sdk-signer-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-dlm",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-dlm/1.11.627/aws-java-sdk-dlm-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-macie",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-macie/1.11.627/aws-java-sdk-macie-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-eks",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-eks/1.11.627/aws-java-sdk-eks-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-mediatailor",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-mediatailor/1.11.627/aws-java-sdk-mediatailor-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-neptune",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-neptune/1.11.627/aws-java-sdk-neptune-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-pi",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-pi/1.11.627/aws-java-sdk-pi-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-iot1clickprojects",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-iot1clickprojects/1.11.627/aws-java-sdk-iot1clickprojects-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-iot1clickdevices",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-iot1clickdevices/1.11.627/aws-java-sdk-iot1clickdevices-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-iotanalytics",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-iotanalytics/1.11.627/aws-java-sdk-iotanalytics-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-acmpca",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-acmpca/1.11.627/aws-java-sdk-acmpca-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-secretsmanager",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-secretsmanager/1.11.627/aws-java-sdk-secretsmanager-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-fms",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-fms/1.11.627/aws-java-sdk-fms-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-connect",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-connect/1.11.627/aws-java-sdk-connect-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-transcribe",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-transcribe/1.11.627/aws-java-sdk-transcribe-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-autoscalingplans",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-autoscalingplans/1.11.627/aws-java-sdk-autoscalingplans-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-workmail",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-workmail/1.11.627/aws-java-sdk-workmail-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-servicediscovery",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-servicediscovery/1.11.627/aws-java-sdk-servicediscovery-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-cloud9",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-cloud9/1.11.627/aws-java-sdk-cloud9-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-serverlessapplicationrepository",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-serverlessapplicationrepository/1.11.627/aws-java-sdk-serverlessapplicationrepository-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-alexaforbusiness",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-alexaforbusiness/1.11.627/aws-java-sdk-alexaforbusiness-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-resourcegroups",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-resourcegroups/1.11.627/aws-java-sdk-resourcegroups-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-comprehend",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-comprehend/1.11.627/aws-java-sdk-comprehend-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-translate",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-translate/1.11.627/aws-java-sdk-translate-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-sagemaker",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-sagemaker/1.11.627/aws-java-sdk-sagemaker-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-iotjobsdataplane",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-iotjobsdataplane/1.11.627/aws-java-sdk-iotjobsdataplane-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-sagemakerruntime",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-sagemakerruntime/1.11.627/aws-java-sdk-sagemakerruntime-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-kinesisvideo",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-kinesisvideo/1.11.627/aws-java-sdk-kinesisvideo-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "io.netty",
+        "artifactId": "netty-codec-http",
+        "version": "4.1.17.Final",
+        "type": "jar"
+      },
+      "uri": "repository/io/netty/netty-codec-http/4.1.17.Final/netty-codec-http-4.1.17.Final.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "io.netty",
+        "artifactId": "netty-codec",
+        "version": "4.1.17.Final",
+        "type": "jar"
+      },
+      "uri": "repository/io/netty/netty-codec/4.1.17.Final/netty-codec-4.1.17.Final.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "io.netty",
+        "artifactId": "netty-handler",
+        "version": "4.1.17.Final",
+        "type": "jar"
+      },
+      "uri": "repository/io/netty/netty-handler/4.1.17.Final/netty-handler-4.1.17.Final.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "io.netty",
+        "artifactId": "netty-buffer",
+        "version": "4.1.17.Final",
+        "type": "jar"
+      },
+      "uri": "repository/io/netty/netty-buffer/4.1.17.Final/netty-buffer-4.1.17.Final.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "io.netty",
+        "artifactId": "netty-common",
+        "version": "4.1.17.Final",
+        "type": "jar"
+      },
+      "uri": "repository/io/netty/netty-common/4.1.17.Final/netty-common-4.1.17.Final.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "io.netty",
+        "artifactId": "netty-transport",
+        "version": "4.1.17.Final",
+        "type": "jar"
+      },
+      "uri": "repository/io/netty/netty-transport/4.1.17.Final/netty-transport-4.1.17.Final.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "io.netty",
+        "artifactId": "netty-resolver",
+        "version": "4.1.17.Final",
+        "type": "jar"
+      },
+      "uri": "repository/io/netty/netty-resolver/4.1.17.Final/netty-resolver-4.1.17.Final.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-appsync",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-appsync/1.11.627/aws-java-sdk-appsync-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-guardduty",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-guardduty/1.11.627/aws-java-sdk-guardduty-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-mq",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-mq/1.11.627/aws-java-sdk-mq-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-mediaconvert",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-mediaconvert/1.11.627/aws-java-sdk-mediaconvert-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-mediastore",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-mediastore/1.11.627/aws-java-sdk-mediastore-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-mediastoredata",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-mediastoredata/1.11.627/aws-java-sdk-mediastoredata-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-medialive",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-medialive/1.11.627/aws-java-sdk-medialive-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-mediapackage",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-mediapackage/1.11.627/aws-java-sdk-mediapackage-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-costexplorer",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-costexplorer/1.11.627/aws-java-sdk-costexplorer-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-pricing",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-pricing/1.11.627/aws-java-sdk-pricing-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-mobile",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-mobile/1.11.627/aws-java-sdk-mobile-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-cloudhsmv2",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-cloudhsmv2/1.11.627/aws-java-sdk-cloudhsmv2-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-glue",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-glue/1.11.627/aws-java-sdk-glue-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-migrationhub",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-migrationhub/1.11.627/aws-java-sdk-migrationhub-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-dax",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-dax/1.11.627/aws-java-sdk-dax-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-greengrass",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-greengrass/1.11.627/aws-java-sdk-greengrass-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-athena",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-athena/1.11.627/aws-java-sdk-athena-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-marketplaceentitlement",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-marketplaceentitlement/1.11.627/aws-java-sdk-marketplaceentitlement-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-codestar",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-codestar/1.11.627/aws-java-sdk-codestar-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-lexmodelbuilding",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-lexmodelbuilding/1.11.627/aws-java-sdk-lexmodelbuilding-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-resourcegroupstaggingapi",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-resourcegroupstaggingapi/1.11.627/aws-java-sdk-resourcegroupstaggingapi-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-pinpoint",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-pinpoint/1.11.627/aws-java-sdk-pinpoint-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-xray",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-xray/1.11.627/aws-java-sdk-xray-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-opsworkscm",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-opsworkscm/1.11.627/aws-java-sdk-opsworkscm-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-support",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-support/1.11.627/aws-java-sdk-support-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-simpledb",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-simpledb/1.11.627/aws-java-sdk-simpledb-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-servicecatalog",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-servicecatalog/1.11.627/aws-java-sdk-servicecatalog-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-servermigration",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-servermigration/1.11.627/aws-java-sdk-servermigration-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-simpleworkflow",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-simpleworkflow/1.11.627/aws-java-sdk-simpleworkflow-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-storagegateway",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-storagegateway/1.11.627/aws-java-sdk-storagegateway-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-route53",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-route53/1.11.627/aws-java-sdk-route53-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-s3",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-s3/1.11.627/aws-java-sdk-s3-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-importexport",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-importexport/1.11.627/aws-java-sdk-importexport-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-sts",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-sts/1.11.627/aws-java-sdk-sts-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-sqs",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-sqs/1.11.627/aws-java-sdk-sqs-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-rds",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-rds/1.11.627/aws-java-sdk-rds-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-redshift",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-redshift/1.11.627/aws-java-sdk-redshift-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-elasticbeanstalk",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-elasticbeanstalk/1.11.627/aws-java-sdk-elasticbeanstalk-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-glacier",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-glacier/1.11.627/aws-java-sdk-glacier-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-iam",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-iam/1.11.627/aws-java-sdk-iam-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-datapipeline",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-datapipeline/1.11.627/aws-java-sdk-datapipeline-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-elasticloadbalancing",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-elasticloadbalancing/1.11.627/aws-java-sdk-elasticloadbalancing-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-elasticloadbalancingv2",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-elasticloadbalancingv2/1.11.627/aws-java-sdk-elasticloadbalancingv2-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-emr",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-emr/1.11.627/aws-java-sdk-emr-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-elasticache",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-elasticache/1.11.627/aws-java-sdk-elasticache-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-elastictranscoder",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-elastictranscoder/1.11.627/aws-java-sdk-elastictranscoder-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-ec2",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-ec2/1.11.627/aws-java-sdk-ec2-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-dynamodb",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-dynamodb/1.11.627/aws-java-sdk-dynamodb-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-sns",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-sns/1.11.627/aws-java-sdk-sns-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-budgets",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-budgets/1.11.627/aws-java-sdk-budgets-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-cloudtrail",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-cloudtrail/1.11.627/aws-java-sdk-cloudtrail-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-cloudwatch",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-cloudwatch/1.11.627/aws-java-sdk-cloudwatch-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-logs",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-logs/1.11.627/aws-java-sdk-logs-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-events",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-events/1.11.627/aws-java-sdk-events-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-cognitoidentity",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-cognitoidentity/1.11.627/aws-java-sdk-cognitoidentity-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-cognitosync",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-cognitosync/1.11.627/aws-java-sdk-cognitosync-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-directconnect",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-directconnect/1.11.627/aws-java-sdk-directconnect-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-cloudformation",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-cloudformation/1.11.627/aws-java-sdk-cloudformation-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-cloudfront",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-cloudfront/1.11.627/aws-java-sdk-cloudfront-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-clouddirectory",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-clouddirectory/1.11.627/aws-java-sdk-clouddirectory-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-kinesis",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-kinesis/1.11.627/aws-java-sdk-kinesis-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-opsworks",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-opsworks/1.11.627/aws-java-sdk-opsworks-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-ses",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-ses/1.11.627/aws-java-sdk-ses-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-autoscaling",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-autoscaling/1.11.627/aws-java-sdk-autoscaling-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-cloudsearch",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-cloudsearch/1.11.627/aws-java-sdk-cloudsearch-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-cloudwatchmetrics",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-cloudwatchmetrics/1.11.627/aws-java-sdk-cloudwatchmetrics-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-codedeploy",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-codedeploy/1.11.627/aws-java-sdk-codedeploy-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-codepipeline",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-codepipeline/1.11.627/aws-java-sdk-codepipeline-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-kms",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-kms/1.11.627/aws-java-sdk-kms-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-config",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-config/1.11.627/aws-java-sdk-config-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-lambda",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-lambda/1.11.627/aws-java-sdk-lambda-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-ecs",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-ecs/1.11.627/aws-java-sdk-ecs-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-ecr",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-ecr/1.11.627/aws-java-sdk-ecr-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-cloudhsm",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-cloudhsm/1.11.627/aws-java-sdk-cloudhsm-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-ssm",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-ssm/1.11.627/aws-java-sdk-ssm-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-workspaces",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-workspaces/1.11.627/aws-java-sdk-workspaces-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-machinelearning",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-machinelearning/1.11.627/aws-java-sdk-machinelearning-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-directory",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-directory/1.11.627/aws-java-sdk-directory-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-efs",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-efs/1.11.627/aws-java-sdk-efs-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-codecommit",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-codecommit/1.11.627/aws-java-sdk-codecommit-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-devicefarm",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-devicefarm/1.11.627/aws-java-sdk-devicefarm-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-elasticsearch",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-elasticsearch/1.11.627/aws-java-sdk-elasticsearch-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-waf",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-waf/1.11.627/aws-java-sdk-waf-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-marketplacecommerceanalytics",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-marketplacecommerceanalytics/1.11.627/aws-java-sdk-marketplacecommerceanalytics-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-inspector",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-inspector/1.11.627/aws-java-sdk-inspector-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-iot",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-iot/1.11.627/aws-java-sdk-iot-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-api-gateway",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-api-gateway/1.11.627/aws-java-sdk-api-gateway-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-acm",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-acm/1.11.627/aws-java-sdk-acm-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-gamelift",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-gamelift/1.11.627/aws-java-sdk-gamelift-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-dms",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-dms/1.11.627/aws-java-sdk-dms-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-marketplacemeteringservice",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-marketplacemeteringservice/1.11.627/aws-java-sdk-marketplacemeteringservice-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-cognitoidp",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-cognitoidp/1.11.627/aws-java-sdk-cognitoidp-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-discovery",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-discovery/1.11.627/aws-java-sdk-discovery-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-applicationautoscaling",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-applicationautoscaling/1.11.627/aws-java-sdk-applicationautoscaling-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-snowball",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-snowball/1.11.627/aws-java-sdk-snowball-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-rekognition",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-rekognition/1.11.627/aws-java-sdk-rekognition-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-polly",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-polly/1.11.627/aws-java-sdk-polly-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-lightsail",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-lightsail/1.11.627/aws-java-sdk-lightsail-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-stepfunctions",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-stepfunctions/1.11.627/aws-java-sdk-stepfunctions-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-health",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-health/1.11.627/aws-java-sdk-health-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-costandusagereport",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-costandusagereport/1.11.627/aws-java-sdk-costandusagereport-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-codebuild",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-codebuild/1.11.627/aws-java-sdk-codebuild-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-appstream",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-appstream/1.11.627/aws-java-sdk-appstream-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-shield",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-shield/1.11.627/aws-java-sdk-shield-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-batch",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-batch/1.11.627/aws-java-sdk-batch-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-lex",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-lex/1.11.627/aws-java-sdk-lex-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-mechanicalturkrequester",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-mechanicalturkrequester/1.11.627/aws-java-sdk-mechanicalturkrequester-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-organizations",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-organizations/1.11.627/aws-java-sdk-organizations-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-workdocs",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-workdocs/1.11.627/aws-java-sdk-workdocs-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-core",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-core/1.11.627/aws-java-sdk-core-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "commons-logging",
+        "artifactId": "commons-logging",
+        "version": "1.1.3",
+        "type": "jar"
+      },
+      "uri": "repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.httpcomponents",
+        "artifactId": "httpclient",
+        "version": "4.5.9",
+        "type": "jar"
+      },
+      "uri": "repository/org/apache/httpcomponents/httpclient/4.5.9/httpclient-4.5.9.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.httpcomponents",
+        "artifactId": "httpcore",
+        "version": "4.4.11",
+        "type": "jar"
+      },
+      "uri": "repository/org/apache/httpcomponents/httpcore/4.4.11/httpcore-4.4.11.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "software.amazon.ion",
+        "artifactId": "ion-java",
+        "version": "1.0.2",
+        "type": "jar"
+      },
+      "uri": "repository/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.fasterxml.jackson.core",
+        "artifactId": "jackson-databind",
+        "version": "2.6.7.2",
+        "type": "jar"
+      },
+      "uri": "repository/com/fasterxml/jackson/core/jackson-databind/2.6.7.2/jackson-databind-2.6.7.2.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.fasterxml.jackson.core",
+        "artifactId": "jackson-annotations",
+        "version": "2.6.0",
+        "type": "jar"
+      },
+      "uri": "repository/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.fasterxml.jackson.core",
+        "artifactId": "jackson-core",
+        "version": "2.6.7",
+        "type": "jar"
+      },
+      "uri": "repository/com/fasterxml/jackson/core/jackson-core/2.6.7/jackson-core-2.6.7.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.fasterxml.jackson.dataformat",
+        "artifactId": "jackson-dataformat-cbor",
+        "version": "2.6.7",
+        "type": "jar"
+      },
+      "uri": "repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.7/jackson-dataformat-cbor-2.6.7.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "joda-time",
+        "artifactId": "joda-time",
+        "version": "2.8.1",
+        "type": "jar"
+      },
+      "uri": "repository/joda-time/joda-time/2.8.1/joda-time-2.8.1.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-models",
+        "version": "1.11.627",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-models/1.11.627/aws-java-sdk-models-1.11.627.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "com.amazonaws",
+        "artifactId": "aws-java-sdk-swf-libraries",
+        "version": "1.11.22",
+        "type": "jar"
+      },
+      "uri": "repository/com/amazonaws/aws-java-sdk-swf-libraries/1.11.22/aws-java-sdk-swf-libraries-1.11.22.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.apache.commons",
+        "artifactId": "commons-lang3",
+        "version": "3.9",
+        "type": "jar"
+      },
+      "uri": "repository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar"
+    }
+  ]
+}
