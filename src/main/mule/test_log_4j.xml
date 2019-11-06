@@ -31,8 +31,8 @@ output application/json
                 "encryption_type": "AES-GCM",
                 "authentication_type": "KMS with IAM Role",
                 "encryption_context": "{\"environment\":\"wu-llm-stg\",\"field_name\":\"social_security_number\"}",
-                "decryption_key": "arn:aws:kms:us-west-2:708629414622:key/5d83e7e6-bb98-4126-9ddb-56bf0c0dafaa",
-                "decryption_credentials_path": "arn:aws:iam::708629414622:role/DataSystems-Team-Sandbox"
+                "decryption_key": "arn:aws:kms:us-west-2:123656789491485:key/21d23e7e6-bb98-3456-4567-9093345",
+                "decryption_credentials_path": "arn:aws:iam::123656789491485:role/DoorSystems-Team-Sandbox"
             },
             "recommender":
              {
@@ -40,8 +40,8 @@ output application/json
                 "encryption_type": "AES-GCM",
                 "authentication_type": "KMS with IAM Role",
                 "encryption_context": "{\"environment\":\"wu-llm-stg\",\"field_name\":\"social_security_number\"}",
-                "decryption_key": "arn:aws:kms:us-west-2:708629414622:key/5d83e7e6-bb98-4126-9ddb-56bf0c0dafaa",
-                "decryption_credentials_path": "arn:aws:iam::708629414622:role/DataSystems-Team-Sandbox"
+                "decryption_key": "arn:aws:kms:us-west-2:123656789491485:key/21d23e7e6-bb98-3456-4567-9093345",
+                "decryption_credentials_path": "arn:aws:iam::123656789491485:role/DoorSystems-Team-Sandbox"
             }          
 }
     ]
